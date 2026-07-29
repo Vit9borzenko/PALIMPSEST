@@ -1,6 +1,13 @@
-# TG Analytics
+# PALIMPSEST
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688)
 
 Платформа аналитики Telegram-чатов с комплексным сбором, обработкой и визуализацией данных.
+
+## ⚠️ Disclaimer
+This tool is intended for analyzing **public groups and channels** or **your own chats** only.  
+The authors are not responsible for misuse, unauthorized data collection, or violations of Telegram ToS and local privacy laws.
 
 ## Возможности
 
@@ -113,7 +120,7 @@ ruff check .
 ## Структура проекта
 
 ```
-tg-analytics/
+PALIMPSEST/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py              # Точка входа FastAPI
