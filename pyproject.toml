@@ -1,0 +1,27 @@
+[project]
+name = "tg-analytics"
+version = "0.1.0"
+description = "Telegram analytics platform"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["backend"]
+addopts = "--cov=backend --cov-report=term-missing --cov-fail-under=50"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+plugins = ["pydantic.mypy"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+select = ["E", "F", "I", "N", "W", "UP", "B", "C4"]
+ignore = ["E501"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
